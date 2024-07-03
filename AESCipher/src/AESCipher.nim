@@ -73,8 +73,6 @@ proc encryptData*(key: openArray[byte], msg: openArray[byte]): string =
     echo "==============="
     return toHex(@[byte(ivLen)]) & toHex(ivMem) & toHex(enctext)
 
-when defined(posix) and not defined(genode):
-  {.passl: "-lm".}
 
 when isMainModule:
     var key = genRandomStr(32).toByteSeq
