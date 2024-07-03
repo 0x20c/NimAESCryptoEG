@@ -1,2 +1,32 @@
 # NimAESCryptoEG
-Nim AES Crypto Example (nimcrypto)
+
+<br/>
+
+Nim AES-256-CBC 加密例子，使用 [nimcrypto](https://github.com/cheatfate/nimcrypto) 库
+
+<br/>
+
+```bash
+nimble run --silent
+```
+
+<br/>
+
+```
+===============
+KEY: 576541634F685272654178733B6928267A3B70585079644853374E52723C6826
+===============
+IV:           	545D4749473D707835293E6738362339
+PAN:          	68656C6C6F20776F726C640505050505
+ENC:          	E634519F791636806D7AB8B1BC2148E9
+RES:          	16545D4749473D707835293E6738362339E634519F791636806D7AB8B1BC2148E9
+===============
+===============
+IV Len:           	16
+IV:               	545D4749473D707835293E6738362339
+ENC TEXT:         	E634519F791636806D7AB8B1BC2148E9
+DEC TEXT:         	68656C6C6F20776F726C640505050505
+DEC TEXT(unpad):  	68656C6C6F20776F726C64
+DEC TEXT(string): 	hello world
+===============
+```
